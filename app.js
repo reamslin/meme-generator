@@ -37,7 +37,7 @@ function generateMeme(e) {
                 memeContainer.style.fontSize = "20px";
                 break;
             case "medium":
-                memeContinaer.style.fontSize = "30px";
+                memeContainer.style.fontSize = "30px";
                 break;
             default:
                 memeContainer.style.fontSize = "40px";
