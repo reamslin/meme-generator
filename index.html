@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="header">
+    <h1>MEME GENERATOR</h1>
+    <h2>Fill out the form to create a dank meme</h2>
+    <div id="container">
+        <form>
+            <div class="row">
+                <div class="left-col">
+                <label for="image">Image URL: </label>
+                </div>
+                <div class="right-col">
+                    <input type="text" id="image" name="image" placeholder="add a URL for the image you would like to use for the meme">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="toptext">Text on top: </label>
+                </div>
+                <div class="right-col">
+                    <input type="text" id="toptext" name="toptext" placeholder="(optional) insert text you would like to see on the top of the meme">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="bottomtext">Text on bottom: </label>
+                </div>
+                <div class="right-col">
+                    <input type="text" id="bottomtext" name="bottomtext" placeholder="(optional) insert text you would like to see on the bottom of the meme">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-col">
+                    <label for="textsize">Text Size: </label>
+                </div>
+                <div class="right-col">
+                    <select id="textsize">
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="right-col">
+                    <button id="submit">GENERATE MEME</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="memes">
+</div>    
+<script src="app.js"></script>
+</body>
+</html>

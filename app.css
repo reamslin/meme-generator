@@ -1,0 +1,132 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategrey; 
+}
+
+h1 {
+    margin: 20px;
+    color: lightgray;
+}
+
+h2 {
+    margin: 20px;
+    color: lightgray;
+}
+#container {
+    padding: 10px;
+    margin: 10px;
+    margin-right: 25%;
+    background-color: grey;
+    border-radius: 10px;
+}
+.left-col {
+    margin-top: 10px;
+    width: 15%;
+    float: left
+
+}
+
+.right-col {
+    margin-top: 10px;
+    width: 85%;
+    float: right;
+}
+
+select {
+    background-color: lightblue;
+    width: 25%;
+    padding: 5px;
+}
+
+select:focus {
+    background-color: lightpink;
+}
+
+input {
+    background-color: lightblue;
+    width: 100%;
+    padding: 5px;
+}
+
+input:focus {
+    background-color: lightpink;
+}
+
+label {
+    color: lightgray;
+    padding: 5px;
+    display: inline-block;
+    
+}
+
+button {
+    text-align: center;
+    padding: 10px;
+    background-color: darkmagenta;
+    color: lightgray;
+    float: right;
+    border: 2px solid lightgray;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(88, 0, 88);
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.meme {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.meme_overlay {
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 3;
+}
+
+.meme_overlay:hover {
+    opacity: 0.5;
+    background-color: black;
+    background-image: url('x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: red;
+}
+
+.top, .bottom {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-family: "Impact";
+    -webkit-text-stroke: 2px rgb(14, 13, 13);
+}
+
+.top {
+    top: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+}
+
+
